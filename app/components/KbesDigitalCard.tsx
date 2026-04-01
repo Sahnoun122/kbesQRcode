@@ -25,12 +25,12 @@ export default function KbesDigitalCard() {
       {/* Header Profile Section */}
       <div className="flex flex-col items-center pt-12 pb-8 px-6 animate-in slide-in-from-bottom-2 duration-700 fade-in fill-mode-both">
         {/* Logo Circle */}
-        <div className="relative w-40 h-40 mb-6 drop-shadow-[0_0_15px_rgba(251,191,36,0.2)]">
+        <div className="relative w-36 h-36 mb-6 rounded-full overflow-hidden border-2 border-amber-500/20 shadow-xl">
           <Image
             src="/Untitled.jpeg"
             alt="KBES Logo"
             fill
-            className="object-contain"
+            className="object-cover"
             priority
           />
         </div>
