@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Phone, Mail, MapPin, Globe, Clock, Share2, Leaf, ExternalLink, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin, Globe, Clock, Share2, ExternalLink, ChevronRight } from "lucide-react";
 
 export default function KbesDigitalCard() {
   const [mounted, setMounted] = useState(false);
@@ -40,9 +41,15 @@ export default function KbesDigitalCard() {
       {/* Header Profile Section */}
       <div className="flex flex-col items-center pt-12 pb-8 px-6 animate-in slide-in-from-bottom-2 duration-700 fade-in fill-mode-both">
         {/* Logo Circle */}
-        <div className="relative w-28 h-28 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-700 p-1 mb-5 shadow-[0_0_30px_rgba(16,185,129,0.3)]">
-          <div className="w-full h-full rounded-full bg-slate-950 flex items-center justify-center">
-            <Leaf className="w-12 h-12 text-emerald-400" strokeWidth={1.5} />
+        <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-amber-200 via-amber-400 to-amber-600 p-1 mb-5 shadow-[0_0_30px_rgba(251,191,36,0.3)]">
+          <div className="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden relative">
+            <Image 
+              src="/logo.jpg" 
+              alt="KBES Logo" 
+              fill
+              className="object-contain p-2"
+              priority
+            />
           </div>
         </div>
 
