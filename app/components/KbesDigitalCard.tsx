@@ -52,10 +52,7 @@ export default function KbesDigitalCard() {
           </div>
         </div>
 
-        <h1 className="text-3xl font-bold text-white tracking-wide mb-2">KBES</h1>
-        <p className="text-emerald-400 text-sm font-medium tracking-widest uppercase mb-6">Chimie Naturelle</p>
-
-        {/* Quick Actions Bar */}
+        <h1 className="text-3xl font-bold text-white tracking-wide mb-6">KBES</h1>        {/* Quick Actions Bar */}
         <div className="flex items-center gap-4 mb-8">
           <a
             href="tel:0528818210"
