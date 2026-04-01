@@ -70,7 +70,7 @@ export default function KbesQrCard() {
             className="bg-white p-5 rounded-3xl shadow-sm border border-stone-100 mb-4 transition-transform hover:scale-[1.02] duration-300"
           >
             <QRCode
-              value="https://kbes-q-rcode.vercel.app/"
+              value="https://kbes-q-rcode.vercel.app/kbes-info"
               size={180}
               style={{ height: "auto", maxWidth: "100%", width: "100%" }}
               viewBox={`0 0 256 256`}
