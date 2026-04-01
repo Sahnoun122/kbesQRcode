@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Globe, Clock, Share2, ExternalLink, ChevronRight } from "lucide-react";
+import { Phone, Mail, MapPin, Globe, Clock, ExternalLink, ChevronRight } from "lucide-react";
 
 export default function KbesDigitalCard() {
   const [mounted, setMounted] = useState(false);
@@ -11,22 +11,7 @@ export default function KbesDigitalCard() {
     setMounted(true);
   }, []);
 
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "KBES - Carte Digitale",
-          text: "Découvrez KBES, produits vivants issus de la chimie naturelle.",
-          url: window.location.href,
-        });
-      } catch (error) {
-        console.log("Erreur de partage:", error);
-      }
-    } else {
-      navigator.clipboard.writeText(window.location.href);
-      alert("Lien copié dans le presse-papier !");
-    }
-  };
+
 
   const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     "Route nationale N°1 vers Sidi Bibi, Rond-point Ait Mimoun, Chtouka Ait Baha, 80050 Ait Amira, Maroc"
@@ -167,18 +152,7 @@ export default function KbesDigitalCard() {
         </div>
 
         {/* Share Button */}
-        <button
-          onClick={handleShare}
-          className="w-full mt-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-semibold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 shadow-[0_10px_20px_rgba(16,185,129,0.2)] transition-all duration-300 active:scale-[0.98]"
-        >
-          <Share2 className="w-5 h-5" />
-          Partager cette carte
-        </button>
 
-        {/* Footer */}
-        <div className="mt-12 mb-6 text-center">
-          <p className="text-slate-500 text-xs font-medium tracking-widest">© {new Date().getFullYear()} KBES</p>
-        </div>
       </div>
     </div>
   );
