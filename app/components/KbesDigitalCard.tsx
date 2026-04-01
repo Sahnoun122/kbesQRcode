@@ -33,19 +33,18 @@ export default function KbesDigitalCard() {
   )}`;
 
   return (
-    <div 
-      className={`w-full max-w-md mx-auto min-h-screen text-slate-200 flex flex-col transition-opacity duration-1000 ${
-        mounted ? "opacity-100" : "opacity-0"
-      }`}
+    <div
+      className={`w-full max-w-md mx-auto min-h-screen text-slate-200 flex flex-col transition-opacity duration-1000 ${mounted ? "opacity-100" : "opacity-0"
+        }`}
     >
       {/* Header Profile Section */}
       <div className="flex flex-col items-center pt-12 pb-8 px-6 animate-in slide-in-from-bottom-2 duration-700 fade-in fill-mode-both">
         {/* Logo Circle */}
         <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-amber-200 via-amber-400 to-amber-600 p-1 mb-5 shadow-[0_0_30px_rgba(251,191,36,0.3)]">
           <div className="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden relative">
-            <Image 
-              src="/logo.jpg" 
-              alt="KBES Logo" 
+            <Image
+              src="/Untitled.jpeg"
+              alt="KBES Logo"
               fill
               className="object-contain p-2"
               priority
@@ -101,7 +100,7 @@ export default function KbesDigitalCard() {
       <div className="flex-1 px-4 pb-12 w-full animate-in slide-in-from-bottom-4 duration-700 delay-200 fade-in fill-mode-both">
         <div className="bg-slate-900/60 backdrop-blur-xl border border-slate-800/60 rounded-3xl p-2 shadow-2xl">
           <div className="grid gap-1">
-            
+
             {/* Phone Info */}
             <a href="tel:0528818210" className="flex items-center gap-4 p-4 rounded-2xl hover:bg-slate-800/80 transition-colors group">
               <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-800/50 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 transition-colors">
@@ -171,7 +170,7 @@ export default function KbesDigitalCard() {
         </div>
 
         {/* Share Button */}
-        <button 
+        <button
           onClick={handleShare}
           className="w-full mt-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-semibold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 shadow-[0_10px_20px_rgba(16,185,129,0.2)] transition-all duration-300 active:scale-[0.98]"
         >
